@@ -2821,15 +2821,15 @@ nav .container .row .nav-right .search-basket .burger:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .testimonialsContainer .testimonialsSlider .cardTestimonials .testimonialsContent img {
-  max-width: 65px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
-}
-
-.testimonialsContainer .testimonialsSlider .cardTestimonials .testimonialsContent .testimonialsText {
-  padding-left: 35px;
+  margin-right: 35px;
 }
 
 .testimonialsContainer .testimonialsSlider .cardTestimonials .testimonialsContent .testimonialsText h5 {
@@ -2856,6 +2856,28 @@ nav .container .row .nav-right .search-basket .burger:hover {
 .slick-prev,
 .slick-next {
   display: none !important;
+}
+
+@media screen and (max-width: 700px) {
+  .testimonialsContainer {
+    width: 90%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .testimonialsText {
+    width: 100% !important;
+    text-align: center !important;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+  }
+  .testimonialsContent img {
+    width: 100px !important;
+    height: 100px !important;
+    margin: 15px auto !important;
+  }
 }
 
 .lastestNewsContainer {
